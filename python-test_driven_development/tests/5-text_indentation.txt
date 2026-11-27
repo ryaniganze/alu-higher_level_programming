@@ -1,0 +1,39 @@
+The text_indentation function
+=============================
+
+This function prints text with two new lines after ., ? and :.
+
+Text with a period:
+
+>>> text_indentation("Hello. World.")
+Hello.
+<BLANKLINE>
+World.
+<BLANKLINE>
+
+Text with a question mark:
+
+>>> text_indentation("How are you? I am fine.")
+How are you?
+<BLANKLINE>
+I am fine.
+<BLANKLINE>
+
+Text with a colon:
+
+>>> text_indentation("Hello: World")
+Hello:
+<BLANKLINE>
+World
+
+Text without punctuation:
+
+>>> text_indentation("Hello World")
+Hello World
+
+Invalid input:
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
