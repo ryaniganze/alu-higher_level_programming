@@ -560,3 +560,4 @@ else
 fi
 
 echo "Project setup and local checks completed."
+
