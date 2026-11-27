@@ -1,0 +1,8 @@
+Test the MyList class.
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList([4, 2, 5, 1, 3])
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> my_list
+[4, 2, 5, 1, 3]

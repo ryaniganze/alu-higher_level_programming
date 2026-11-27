@@ -1,0 +1,41 @@
+The add_integer function
+========================
+
+This function adds two numeric values after converting them to integers.
+
+Positive and negative integers:
+
+>>> add_integer(1, 2)
+3
+>>> add_integer(100, -2)
+98
+>>> add_integer(-5, -7)
+-12
+
+Default second argument:
+
+>>> add_integer(2)
+100
+>>> add_integer(0)
+98
+
+Floating-point values are converted to integers:
+
+>>> add_integer(100.3, -2)
+98
+>>> add_integer(2.9, 3.8)
+5
+
+Invalid first argument:
+
+>>> add_integer("hello")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Invalid second argument:
+
+>>> add_integer(2, "hello")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
