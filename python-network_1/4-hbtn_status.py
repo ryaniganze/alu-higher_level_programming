@@ -1,12 +1,13 @@
+
 #!/usr/bin/python3
-"""Fetch and display the ALU intranet status using requests."""
+"""Fetch and display the intranet status using requests."""
 
 import requests
 
 
 def main():
     """Fetch the status resource and display its response information."""
-    response = requests.get("https://alu-intranet.hbtn.io/status")
+    response = requests.get("https://intranet.hbtn.io/status")
     body = response.text
     print("Body response:")
     print("\t- type: {}".format(type(body)))
@@ -15,3 +16,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
